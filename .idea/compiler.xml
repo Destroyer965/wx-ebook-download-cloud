@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="ebook-download-gateway" />
+        <module name="ebook-download-read-circle" />
+        <module name="ebook-download-oss" />
+        <module name="ebook-download-auth" />
+        <module name="ebook-download-book" />
+        <module name="ebook-download-common" />
+        <module name="ebook-download-user" />
+      </profile>
+    </annotationProcessing>
+  </component>
+</project>

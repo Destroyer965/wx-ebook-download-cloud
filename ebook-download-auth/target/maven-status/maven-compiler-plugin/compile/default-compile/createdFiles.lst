@@ -1,0 +1,9 @@
+com/yangjiahai/ebookdownload/config/WebConfigurer.class
+com/yangjiahai/ebookdownload/service/impl/AuthServiceImpl.class
+com/yangjiahai/ebookdownload/mapper/AuthMapper.class
+com/yangjiahai/ebookdownload/config/Swagger2Config.class
+com/yangjiahai/ebookdownload/interceptor/TokenInterceptor.class
+com/yangjiahai/ebookdownload/config/RedisConfig.class
+com/yangjiahai/ebookdownload/controller/AuthController.class
+com/yangjiahai/ebookdownload/service/AuthService.class
+com/yangjiahai/ebookdownload/AuthenticationApplication.class

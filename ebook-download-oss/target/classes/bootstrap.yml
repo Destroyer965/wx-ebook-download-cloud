@@ -1,0 +1,31 @@
+server:
+  port: 8668
+  servlet:
+    context-path: /
+spring:
+  application:
+    name: ossclient
+  servlet:
+    multipart:
+      max-file-size: 100MB
+      max-request-size: 100MB
+  #指定nacos服务地址
+  cloud:
+    nacos:
+      server-addr: 47.104.131.128:8848
+      config:
+        # 读取配置的分组
+        group: DEFAULT_GROUP
+        # 指定读取文件后缀
+        file-extension: yaml
+        #命名空间
+        namespace: 8b9bda53-a77b-48be-82c1-92114cb5bb62
+        name: ossclient-dev
+feign:
+  client:
+    config:
+      default:
+        #建立连接所用的时间，适用于网络状况正常的情况下，两端连接所需要的时间
+        ConnectTimeOut: 5000
+        #建立连接所用的时间，适用于网络状况正常的情况下，两端连接所需要的时间
+        ReadTimeOut: 5000

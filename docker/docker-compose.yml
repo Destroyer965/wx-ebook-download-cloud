@@ -1,0 +1,149 @@
+version: "3.0"
+services:
+  ebooknginx:
+    container_name: nginx
+    image: nginx:1.20.2
+    privileged: true
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - /root/wx-ebook-download-cloud/docker/nginx/conf/nginx.conf:/etc/nginx/nginx.conf:ro
+      - /root/wx-ebook-download-cloud/docker/nginx/nginx/log:/var/log/nginx
+      - /root/wx-ebook-download-cloud/docker/nginx/nginx/www:/var/www
+      - /root/wx-ebook-download-cloud/docker/nginx/letsencrypt:/etc/letsencrypt
+      - /root/wx-ebook-download-cloud/docker/nginx/html:/usr/share/nginx/html
+      - /root/wx-ebook-download-cloud/docker/nginx/cert:/etc/nginx/ssl
+    restart: on-failure
+  #  ebookmysql:
+  #    image: mysql:8.0.23
+  #    ports:
+  #      - "3306:3306"
+  #    volumes:
+  #      - /root/ebookdownload/mysql/data:/var/lib/mysql
+  #    environment:
+  #      MYSQL_DATABASE: "ebook_download"
+  #      MYSQL_ROOT_PASSWORD: root
+  #    build: ./mysql
+  #    restart: always
+  ebookredismaster1:
+    image: redis
+    container_name: ebookredismaster1
+    build:
+      context: ./redis
+    ports:
+      - "6379:6379"
+    volumes:
+      - /root/ebookdownload/redis/data:/data
+      - ./redis/conf/redismaster.conf:/usr/local/etc/redis/redis.conf
+    command: redis-server /usr/local/etc/redis/redis.conf
+    restart: on-failure
+  ebookredislave1:
+    image: redis
+    container_name: ebookredislave1
+    build:
+      context: ./redis
+    ports:
+      - "6380:6380"
+    volumes:
+      - /root/ebookdownload/redis/data:/data
+      - ./redis/conf/redisslave1.conf:/usr/local/etc/redis/redis.conf
+    command: redis-server /usr/local/etc/redis/redis.conf
+    depends_on:
+      - ebookredismaster1
+    restart: on-failure
+  ebookredislave2:
+    image: redis
+    container_name: ebookredislave2
+    build:
+      context: ./redis
+    ports:
+      - "6381:6381"
+    volumes:
+      - /root/ebookdownload/redis/data:/data
+      - ./redis/conf/redisslave2.conf:/usr/local/etc/redis/redis.conf
+    command: redis-server  /usr/local/etc/redis/redis.conf
+    depends_on:
+      - ebookredismaster1
+    restart: on-failure
+#  ebooknacos:
+#    image: nacos/nacos-server:v1.4.3
+#    container_name: nacos
+#    networks:
+#      - ebookdownload
+#    ports:
+#      - "8848:8848"
+#    environment:
+#      - MODE=standalone
+#      - SPRING_DATASOURCE_PLATFORM=mysql
+#      #- MYSQL_SERVICE_HOST=yangjiahai.mysql.rds.aliyuncs.com
+#      - MYSQL_SERVICE_HOST=121.199.208.159
+#      - MYSQL_MASTER_SERVICE_PORT=3306
+#      - MYSQL_SERVICE_USER=root
+#      - MYSQL_SERVICE_PASSWORD=Yjh09101730
+#      - MYSQL_SERVICE_DB_NAME=nacos_config
+#      #- MYSQL_SERVICE_DB_PARAM=useUnicode=true&characterEncoding=UTF-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=GMT%2B8
+#      - JVM_XMS=256m
+#      - JVM_MMS=256m
+#    restart: on-failure
+  ebookdownloadauth:
+    build:
+      context: ./ebookDownloadAuth
+      dockerfile: Dockerfile
+    ports:
+      - "8775:8775"
+    networks:
+      - ebookdownload
+    depends_on:
+      - ebookredismaster1
+      - ebookdownloadgateway
+    restart: on-failure
+  ebookdownloadbook:
+    build:
+      context: ./ebookDownloadBook
+      dockerfile: Dockerfile
+    ports:
+      - "8750:8750"
+    networks:
+      - ebookdownload
+    restart: on-failure
+    depends_on:
+      - ebookredismaster1
+      - ebookdownloadgateway
+  ebookdownloadgateway:
+    build:
+      context: ./ebookDownloadGateway
+      dockerfile: Dockerfile
+    ports:
+      - "8989:8989"
+    networks:
+      - ebookdownload
+    restart: on-failure
+    depends_on:
+      - ebookredismaster1
+  ebookdownloadreadcircle:
+    build:
+      context: ./ebookDownloadReadCircle
+      dockerfile: Dockerfile
+    ports:
+      - "8686:8686"
+    restart: on-failure
+    networks:
+      - ebookdownload
+    depends_on:
+      - ebookredismaster1
+      - ebookdownloadgateway
+  ebookdownloaduser:
+    build:
+      context: ./ebookDownloadUser
+      dockerfile: Dockerfile
+    ports:
+      - "8780:8780"
+    restart: on-failure
+    networks:
+      - ebookdownload
+    depends_on:
+      - ebookredismaster1
+      - ebookdownloadgateway
+networks:
+  ebookdownload:

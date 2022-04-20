@@ -1,0 +1,9 @@
+/Users/yangjiahai/Documents/ebook-download/wx-ebook-download-cloud/ebook-download-auth/src/main/java/com/yangjiahai/ebookdownload/controller/AuthController.java
+/Users/yangjiahai/Documents/ebook-download/wx-ebook-download-cloud/ebook-download-auth/src/main/java/com/yangjiahai/ebookdownload/interceptor/TokenInterceptor.java
+/Users/yangjiahai/Documents/ebook-download/wx-ebook-download-cloud/ebook-download-auth/src/main/java/com/yangjiahai/ebookdownload/config/WebConfigurer.java
+/Users/yangjiahai/Documents/ebook-download/wx-ebook-download-cloud/ebook-download-auth/src/main/java/com/yangjiahai/ebookdownload/config/RedisConfig.java
+/Users/yangjiahai/Documents/ebook-download/wx-ebook-download-cloud/ebook-download-auth/src/main/java/com/yangjiahai/ebookdownload/service/AuthService.java
+/Users/yangjiahai/Documents/ebook-download/wx-ebook-download-cloud/ebook-download-auth/src/main/java/com/yangjiahai/ebookdownload/mapper/AuthMapper.java
+/Users/yangjiahai/Documents/ebook-download/wx-ebook-download-cloud/ebook-download-auth/src/main/java/com/yangjiahai/ebookdownload/AuthenticationApplication.java
+/Users/yangjiahai/Documents/ebook-download/wx-ebook-download-cloud/ebook-download-auth/src/main/java/com/yangjiahai/ebookdownload/config/Swagger2Config.java
+/Users/yangjiahai/Documents/ebook-download/wx-ebook-download-cloud/ebook-download-auth/src/main/java/com/yangjiahai/ebookdownload/service/impl/AuthServiceImpl.java

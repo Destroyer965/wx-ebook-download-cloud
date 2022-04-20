@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yangjiahai.ebookdownload.mapper.BookCategoryMapper">
+    <resultMap id="bookMap" type="com.yangjiahai.ebookdownload.entity.BookCategory">
+        <id column="id" property="id"/>
+        <result column="category_name" property="categoryName"/>
+        <collection property="children" ofType="com.yangjiahai.ebookdownload.entity.Book">
+            <id column="cid" property="id"/>
+            <result column="category_id" property="categoryId"/>
+            <result column="book_name" property="bookName"/>
+            <result column="img_url" property="imgUrl"/>
+        </collection>
+    </resultMap>
+    <select id="selectGetRecommendList" parameterType="integer" resultMap="bookMap">
+        SELECT
+        t1.id,
+        t1.category_name,
+        t2.id cid,
+        t2.category_id,
+        t2.book_name,
+        t2.img_url
+        FROM
+        wx_book_category t1
+        JOIN (
+        SELECT
+        t.id,
+        t.category_id,
+        t.img_url,
+        t.book_name,
+        t.book_author,
+        t.book_publish,
+        t.book_isbn,
+        t.book_intrduction,
+        t.download_count,
+        t.collection_count,
+        t.recommendation_index,
+        t.download_url,
+        t.gmt_creat,
+        t.gmt_modified
+        FROM
+        wx_book t
+        WHERE
+        ( SELECT count( 1 ) FROM wx_book WHERE category_id = t.category_id AND id > t.id )&lt;= 3
+        ORDER BY
+        id,
+        category_id DESC
+        ) t2 ON t1.id = t2.category_id ${ew.customSqlSegment}
+
+    </select>
+</mapper>

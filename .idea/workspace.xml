@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="67c1acc4-940f-4539-88b0-32c3c8312745" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="AnnotationType" />
+        <option value="mybatis-mapper" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="$USER_HOME$/apache-maven-3.8.4" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="jdkForImporter" value="1.8" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenRunner">
+    <option name="jreName" value="1.8" />
+    <option name="skipTests" value="true" />
+    <option name="vmOptions" value="-DarchetypeCatalog=internal" />
+  </component>
+  <component name="ProjectId" id="25DdybC2oypl5WGtSiYBBu8Xbbi" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="ToolWindowFile Transfer.ShowToolbar" value="false" />
+    <property name="ToolWindowSpring.ShowToolbar" value="false" />
+    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/ebook-download-upload/src/main/java/com/yangjiahai/ebookdownload/service" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/docker/ebookDownloadGateway" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.1890625" />
+    <property name="project.structure.side.proportion" value="0.31051108" />
+    <property name="service.view.auto.scroll.from.source" value="true" />
+    <property name="service.view.auto.scroll.to.source" value="true" />
+    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
+  </component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.yangjiahai.ebookdownload.mapper" />
+      <recent name="com.yangjiahai.ebookdownload.service.impl" />
+      <recent name="com.yangjiahai.ebookdownload.service" />
+      <recent name="ebookdownload.service.impl" />
+      <recent name="com.yangjiahai.ebookdownload.controller" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/docker/ebookDownloadGateway" />
+      <recent name="$PROJECT_DIR$/docker/ebookDownloadUser" />
+      <recent name="$PROJECT_DIR$/docker/ebookDownloadReadCircle" />
+      <recent name="$PROJECT_DIR$/docker/ebookDownloadBook" />
+      <recent name="$PROJECT_DIR$/docker/ebookDownloadAuth" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/ebook-download-gateway" />
+      <recent name="$PROJECT_DIR$/ebook-download-gateway/src/main/resources" />
+      <recent name="$PROJECT_DIR$/ebook-download-book" />
+      <recent name="$PROJECT_DIR$/ebook-download-oss/src/main/resources" />
+      <recent name="$PROJECT_DIR$/ebook-download-read-circle/src/main/resources/mapper" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.yangjiahai.ebookdownload.handler" />
+      <recent name="com.yangjiahai.ebookdownload.VO" />
+      <recent name="com.yangjiahai.ebookdownload.mapper" />
+      <recent name="com.yangjiahai.ebookdownload.service.impl" />
+      <recent name="com.yangjiahai.ebookdownload.service" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn install" />
+    </option>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="AntRunConfiguration" />
+        <option value="Application" />
+        <option value="CompoundRunConfigurationType" />
+        <option value="JarApplication" />
+        <option value="MavenRunConfiguration" />
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.UserApplication">
+    <configuration name="AuthenticationApplicationTest.tetsq" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
+      <module name="ebook-download-auth" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.yangjiahai.ebookdownload.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.yangjiahai.ebookdownload" />
+      <option name="MAIN_CLASS_NAME" value="com.yangjiahai.ebookdownload.AuthenticationApplicationTest" />
+      <option name="METHOD_NAME" value="tetsq" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AuthenticationApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="ebook-download-auth" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.yangjiahai.ebookdownload.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yangjiahai.ebookdownload.AuthenticationApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BookApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="ebook-download-book" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.yangjiahai.ebookdownload.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yangjiahai.ebookdownload.BookApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="ebook-download-gateway" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.yangjiahai.ebookdownload.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yangjiahai.ebookdownload.GatewayApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OssApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="ebook-download-oss" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yangjiahai.ebookdownload.OssApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ReadCircleApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="ebook-download-read-circle" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.yangjiahai.ebookdownload.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yangjiahai.ebookdownload.ReadCircleApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="ebook-download-user" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.yangjiahai.ebookdownload.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yangjiahai.ebookdownload.UserApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="JUnit.AuthenticationApplication.uuidTest" />
+      <item itemvalue="JUnit.AuthenticationApplicationTest.tetsq" />
+      <item itemvalue="Spring Boot.OssApplication" />
+      <item itemvalue="Spring Boot.BookApplication" />
+      <item itemvalue="Spring Boot.UserApplication" />
+      <item itemvalue="Spring Boot.GatewayApplication" />
+      <item itemvalue="Spring Boot.AuthenticationApplication" />
+      <item itemvalue="Spring Boot.ReadCircleApplication" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.ReadCircleApplication" />
+        <item itemvalue="Spring Boot.AuthenticationApplication" />
+        <item itemvalue="Spring Boot.GatewayApplication" />
+        <item itemvalue="Spring Boot.UserApplication" />
+        <item itemvalue="Spring Boot.BookApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="67c1acc4-940f-4539-88b0-32c3c8312745" name="Changes" comment="" />
+      <created>1645065848355</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1645065848355</updated>
+      <workItem from="1645065849517" duration="1232000" />
+      <workItem from="1645069070551" duration="11252000" />
+      <workItem from="1645082593643" duration="348000" />
+      <workItem from="1645082971948" duration="8616000" />
+      <workItem from="1645093914215" duration="54108000" />
+      <workItem from="1645259435138" duration="4169000" />
+      <workItem from="1645321966481" duration="10698000" />
+      <workItem from="1645333748643" duration="4461000" />
+      <workItem from="1645338272248" duration="4066000" />
+      <workItem from="1645342495698" duration="80722000" />
+      <workItem from="1646017965567" duration="41000" />
+      <workItem from="1646018070077" duration="48941000" />
+      <workItem from="1646182144853" duration="24423000" />
+      <workItem from="1646228131539" duration="97459000" />
+      <workItem from="1646616778213" duration="4526000" />
+      <workItem from="1646625533616" duration="55310000" />
+      <workItem from="1646806782711" duration="16000" />
+      <workItem from="1646806856031" duration="57715000" />
+      <workItem from="1646999676249" duration="32041000" />
+      <workItem from="1647097916884" duration="229000" />
+      <workItem from="1647098205348" duration="51269000" />
+      <workItem from="1647262040237" duration="1903000" />
+      <workItem from="1647264022261" duration="2453000" />
+      <workItem from="1647267100525" duration="442000" />
+      <workItem from="1647267609916" duration="46983000" />
+      <workItem from="1647415703682" duration="36218000" />
+      <workItem from="1647775506033" duration="220000" />
+      <workItem from="1648259845222" duration="31077000" />
+      <workItem from="1648437728147" duration="6463000" />
+      <workItem from="1648476292960" duration="2581000" />
+      <workItem from="1648528408931" duration="15390000" />
+      <workItem from="1648985485151" duration="7914000" />
+      <workItem from="1649057297298" duration="3613000" />
+      <workItem from="1649130637355" duration="22999000" />
+      <workItem from="1649303474065" duration="521000" />
+      <workItem from="1649309949240" duration="7342000" />
+      <workItem from="1649317598679" duration="11079000" />
+      <workItem from="1649386363548" duration="26092000" />
+      <workItem from="1649654616241" duration="23951000" />
+      <workItem from="1649815144822" duration="37383000" />
+      <workItem from="1650157756142" duration="726000" />
+      <workItem from="1650200758612" duration="13818000" />
+      <workItem from="1650272633976" duration="37019000" />
+      <workItem from="1650447474906" duration="7037000" />
+      <workItem from="1650460849068" duration="878000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NumberFormatException" package="java.lang" />
+          <option name="timeStamp" value="2" />
+        </breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.ClassNotFoundException" package="java.lang" />
+          <option name="timeStamp" value="8" />
+        </breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="io.netty.channel.ConnectTimeoutException" package="io.netty.channel" />
+          <option name="timeStamp" value="9" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

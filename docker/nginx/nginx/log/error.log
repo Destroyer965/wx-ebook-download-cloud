@@ -1,0 +1,17 @@
+2022/03/26 01:28:41 [warn] 1#1: server name "https://" has suspicious symbols in /etc/nginx/nginx.conf:101
+2022/03/26 01:30:09 [error] 23#23: *1 open() "/etc/nginx/html/_profiler/phpinfo" failed (2: No such file or directory), client: 13.115.178.235, server: , request: "GET /_profiler/phpinfo HTTP/1.1", host: "yangjiahai.top"
+2022/03/26 01:30:09 [error] 23#23: *2 open() "/etc/nginx/html/phpinfo.php" failed (2: No such file or directory), client: 13.115.178.235, server: , request: "GET /phpinfo.php HTTP/1.1", host: "yangjiahai.top"
+2022/03/26 01:30:09 [error] 23#23: *3 open() "/etc/nginx/html/phpinfo" failed (2: No such file or directory), client: 13.115.178.235, server: , request: "GET /phpinfo HTTP/1.1", host: "yangjiahai.top"
+2022/03/26 01:30:09 [error] 23#23: *4 open() "/etc/nginx/html/aws.yml" failed (2: No such file or directory), client: 13.115.178.235, server: , request: "GET /aws.yml HTTP/1.1", host: "yangjiahai.top"
+2022/03/26 01:30:09 [error] 23#23: *5 open() "/etc/nginx/html/.env.bak" failed (2: No such file or directory), client: 13.115.178.235, server: , request: "GET /.env.bak HTTP/1.1", host: "yangjiahai.top"
+2022/03/26 01:30:09 [error] 23#23: *6 open() "/etc/nginx/html/info.php" failed (2: No such file or directory), client: 13.115.178.235, server: , request: "GET /info.php HTTP/1.1", host: "yangjiahai.top"
+2022/03/26 01:30:09 [error] 23#23: *7 open() "/etc/nginx/html/.aws/credentials" failed (2: No such file or directory), client: 13.115.178.235, server: , request: "GET /.aws/credentials HTTP/1.1", host: "yangjiahai.top"
+2022/03/26 01:30:09 [error] 23#23: *8 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 13.115.178.235, server: , request: "GET / HTTP/1.1", host: "yangjiahai.top"
+2022/03/26 01:30:09 [error] 23#23: *9 open() "/etc/nginx/html/config/aws.yml" failed (2: No such file or directory), client: 13.115.178.235, server: , request: "GET /config/aws.yml HTTP/1.1", host: "yangjiahai.top"
+2022/03/26 01:30:10 [error] 23#23: *10 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 13.115.178.235, server: , request: "GET / HTTP/1.1", host: "yangjiahai.top"
+2022/03/26 01:30:10 [error] 23#23: *11 open() "/etc/nginx/html/config.js" failed (2: No such file or directory), client: 13.115.178.235, server: , request: "GET /config.js HTTP/1.1", host: "yangjiahai.top"
+2022/03/26 01:32:03 [warn] 1#1: server name "https://" has suspicious symbols in /etc/nginx/nginx.conf:100
+2022/03/26 01:32:59 [warn] 1#1: server name "https://www.freebook.icu" has suspicious symbols in /etc/nginx/nginx.conf:100
+2022/03/26 01:49:02 [error] 30#30: *3 open() "/usr/share/nginx/html/favicon.ico" failed (2: No such file or directory), client: 116.249.65.1, server: freebook.icu, request: "GET /favicon.ico HTTP/1.1", host: "freebook.icu", referrer: "https://freebook.icu/"
+2022/03/26 01:54:22 [error] 23#23: *1 open() "/usr/share/nginx/html/favicon.ico" failed (2: No such file or directory), client: 116.249.65.1, server: freebook.icu, request: "GET /favicon.ico HTTP/1.1", host: "www.freebook.icu", referrer: "https://www.freebook.icu/"
+2022/03/26 01:55:44 [error] 23#23: *3 open() "/usr/share/nginx/html/favicon.ico" failed (2: No such file or directory), client: 116.249.65.1, server: freebook.icu, request: "GET /favicon.ico HTTP/1.1", host: "freebook.icu", referrer: "https://freebook.icu/"

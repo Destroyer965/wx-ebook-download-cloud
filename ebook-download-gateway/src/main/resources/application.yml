@@ -1,0 +1,36 @@
+server:
+  port: 8989
+spring:
+  application:
+    name: GATEWAYCLIENT
+  #指定nacos服务地址
+  cloud:
+    nacos:
+      server-addr: 47.104.131.128:8848
+    gateway:
+      #      Spring Cloud Gateway可以路由请求到http或https的服务，
+      #  如果是将请求路由到https服务，可以通过下面的配置，让网关信任所有的后面服务的证书：
+      httpclient:
+              ssl:
+                use-insecure-trust-manager: true
+      routes:
+        - id: auth_route
+          uri: lb://authentication
+          predicates:
+            - Path=/auth/**
+        - id: user_route
+          uri: lb://userclient
+          predicates:
+            - Path=/user/**,/collection/**,/download/**,/feedback/**
+        - id: book_route
+          uri: lb://bookclient
+          predicates:
+            - Path=/system/**,/book/**,/interview/**
+        - id: upload_route
+          uri: lb://uploadclient
+          predicates:
+            - Path=/upload/**,/download/**
+        - id: read_circle_route
+          uri: lb://readcircleclient
+          predicates:
+            - Path=/readcircle/**,/readcircleimg/**,/report/**
